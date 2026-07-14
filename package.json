@@ -2,7 +2,7 @@
   "name": "depvouch",
   "version": "0.1.0",
   "description": "cargo-vet for npm and PyPI — an in-repo ledger of human dependency reviews, enforced in CI: not a scanner, it records who vouched for which package version, shares vouches across repos, and gates on unreviewed additions.",
-  "author": "JaydenCJ",
+  "author": "JaydenCJ <aisingioro.kiyon@gmail.com>",
   "license": "MIT",
   "type": "module",
   "bin": {
