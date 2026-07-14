@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="428" viewBox="0 0 780 428" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">
+  <rect width="780" height="428" rx="10" fill="#0d1117"/>
+  <rect width="780" height="34" rx="10" fill="#161b22"/>
+  <circle cx="20" cy="17" r="6" fill="#ff5f57"/>
+  <circle cx="40" cy="17" r="6" fill="#febc2e"/>
+  <circle cx="60" cy="17" r="6" fill="#28c840"/>
+  <text x="390" y="21" fill="#8b949e" text-anchor="middle">depvouch — who reviewed this dependency?</text>
+
+  <text x="24" y="64" fill="#7ee787">$ depvouch check</text>
+  <text x="24" y="88" fill="#c9d1d9">depvouch: 2 lockfiles — package-lock.json (4 npm), requirements.txt (3 pypi)</text>
+
+  <text x="24" y="118" fill="#f85149">UNVOUCHED (2)</text>
+  <text x="24" y="140" fill="#c9d1d9">  npm  <tspan fill="#79c0ff">minimist@1.2.8</tspan> — missing safe-to-deploy</text>
+  <text x="24" y="158" fill="#8b949e">       nearest certified version: 1.2.6 — review the 1.2.6 -&gt; 1.2.8 diff</text>
+  <text x="24" y="176" fill="#3fb950">       fix: depvouch vouch minimist@1.2.8 --eco npm --from 1.2.6 --criteria safe-to-deploy --by &lt;you&gt;</text>
+  <text x="24" y="200" fill="#c9d1d9">  pypi <tspan fill="#79c0ff">requests@2.32.3</tspan> — missing safe-to-deploy</text>
+  <text x="24" y="218" fill="#8b949e">       no certified prior version — a full review is needed</text>
+
+  <text x="24" y="248" fill="#c9d1d9">depvouch: <tspan fill="#f85149">FAIL</tspan> — 2 unvouched (4 vouched, 1 exempted, 2 unvouched)  <tspan fill="#8b949e">exit 1</tspan></text>
+
+  <text x="24" y="288" fill="#7ee787">$ depvouch import org-vouches.json --as acme-security</text>
+  <text x="24" y="310" fill="#c9d1d9">depvouch: imported 2 vouches as source `acme-security`</text>
+
+  <text x="24" y="344" fill="#7ee787">$ depvouch check</text>
+  <text x="24" y="366" fill="#c9d1d9">depvouch: 2 lockfiles — package-lock.json (4 npm), requirements.txt (3 pypi)</text>
+  <text x="24" y="394" fill="#c9d1d9">depvouch: <tspan fill="#3fb950">OK</tspan> — every dependency is accounted for (6 vouched, 1 exempted, 0 unvouched)  <tspan fill="#8b949e">exit 0</tspan></text>
+</svg>

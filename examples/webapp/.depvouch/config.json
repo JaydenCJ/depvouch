@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "default-criteria": ["safe-to-deploy"],
+  "dev-criteria": ["safe-to-run"],
+  "criteria": {},
+  "policy": {}
+}

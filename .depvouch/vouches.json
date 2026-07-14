@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "vouches": [
+    {
+      "ecosystem": "npm",
+      "package": "typescript",
+      "version": "5.9.3",
+      "criteria": [
+        "safe-to-run"
+      ],
+      "by": "JaydenCJ",
+      "date": "2026-07-13",
+      "note": "dev-only compiler; official Microsoft release, install has no scripts"
+    }
+  ],
+  "exemptions": []
+}

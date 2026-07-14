@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "vouches": [
+    {
+      "ecosystem": "npm",
+      "package": "accepts",
+      "version": "1.3.8",
+      "criteria": [
+        "safe-to-deploy"
+      ],
+      "by": "alice",
+      "date": "2026-07-02"
+    },
+    {
+      "ecosystem": "npm",
+      "package": "express",
+      "version": "4.19.2",
+      "criteria": [
+        "safe-to-deploy"
+      ],
+      "by": "alice",
+      "date": "2026-07-02",
+      "note": "focused on the router, body parsing and error paths"
+    },
+    {
+      "ecosystem": "npm",
+      "package": "minimist",
+      "version": "1.2.6",
+      "criteria": [
+        "safe-to-deploy"
+      ],
+      "by": "bob",
+      "date": "2026-06-20",
+      "note": "full read; small surface, prototype-pollution history checked"
+    },
+    {
+      "ecosystem": "npm",
+      "package": "prettier",
+      "version": "3.3.2",
+      "criteria": [
+        "safe-to-run"
+      ],
+      "by": "bob",
+      "date": "2026-07-02",
+      "note": "dev-only formatter; checked install scripts and postinstall"
+    },
+    {
+      "ecosystem": "pypi",
+      "package": "flask",
+      "version": "3.0.3",
+      "criteria": [
+        "safe-to-deploy"
+      ],
+      "by": "carol",
+      "date": "2026-07-03"
+    }
+  ],
+  "exemptions": [
+    {
+      "ecosystem": "pypi",
+      "package": "typing-extensions",
+      "version": "4.12.2",
+      "note": "seeded by depvouch init on 2026-07-01"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "vouches": [
+    {
+      "ecosystem": "npm",
+      "package": "minimist",
+      "from": "1.2.6",
+      "version": "1.2.8",
+      "criteria": [
+        "safe-to-deploy"
+      ],
+      "by": "erin",
+      "date": "2026-07-05",
+      "note": "reviewed the 1.2.6 -> 1.2.8 diff: docs and test-only changes"
+    },
+    {
+      "ecosystem": "pypi",
+      "package": "requests",
+      "version": "2.32.3",
+      "criteria": [
+        "safe-to-deploy"
+      ],
+      "by": "dana",
+      "date": "2026-07-04",
+      "note": "full review for the platform team; TLS and redirect handling checked"
+    }
+  ]
+}

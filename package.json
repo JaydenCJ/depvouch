@@ -1,0 +1,53 @@
+{
+  "name": "depvouch",
+  "version": "0.1.0",
+  "description": "cargo-vet for npm and PyPI — an in-repo ledger of human dependency reviews, enforced in CI: not a scanner, it records who vouched for which package version, shares vouches across repos, and gates on unreviewed additions.",
+  "author": "JaydenCJ",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "depvouch": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"tests/*.test.mjs\"",
+    "smoke": "bash scripts/smoke.sh"
+  },
+  "keywords": [
+    "supply-chain",
+    "dependency-review",
+    "cargo-vet",
+    "npm-audit",
+    "pypi",
+    "lockfile",
+    "ci-gate"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaydenCJ/depvouch.git"
+  },
+  "homepage": "https://github.com/JaydenCJ/depvouch#readme",
+  "bugs": {
+    "url": "https://github.com/JaydenCJ/depvouch/issues"
+  }
+}
